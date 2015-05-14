@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sujuiscroll by anuny</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Sujuiscroll</h1>
+      <h2 class="project-tagline">jQuery单页滚动插件</h2>
+      <a href="https://github.com/anuny/sujuiScroll" class="btn">View on GitHub</a>
+      <a href="https://github.com/anuny/sujuiScroll/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/anuny/sujuiScroll/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="sujuiscroll" class="anchor" href="#sujuiscroll" aria-hidden="true"><span class="octicon octicon-link"></span></a>sujuiScroll</h1>
+
+<p>jQuery单页滚动插件</p>
+
+<h2>
+<a id="html代码" class="anchor" href="#html%E4%BB%A3%E7%A0%81" aria-hidden="true"><span class="octicon octicon-link"></span></a>html代码</h2>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>home<span class="pl-pds">"</span></span> <span class="pl-e">data-page</span>=<span class="pl-s"><span class="pl-pds">"</span>index<span class="pl-pds">"</span></span>&gt;index&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>menu<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">ul</span>&gt;
+      &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>index.html<span class="pl-pds">"</span></span> <span class="pl-e">data-nav</span>=<span class="pl-s"><span class="pl-pds">"</span>index<span class="pl-pds">"</span></span>&gt;主页&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;
+      &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>about.html<span class="pl-pds">"</span></span> <span class="pl-e">data-nav</span>=<span class="pl-s"><span class="pl-pds">"</span>about<span class="pl-pds">"</span></span>&gt;关于&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;
+      &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>news.html<span class="pl-pds">"</span></span> <span class="pl-e">data-nav</span>=<span class="pl-s"><span class="pl-pds">"</span>news<span class="pl-pds">"</span></span>&gt;新闻&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;
+      &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>contact.html<span class="pl-pds">"</span></span> <span class="pl-e">data-nav</span>=<span class="pl-s"><span class="pl-pds">"</span>contact<span class="pl-pds">"</span></span>&gt;联系&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;
+    &lt;/<span class="pl-ent">ul</span>&gt;
+  &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>about<span class="pl-pds">"</span></span> <span class="pl-e">data-page</span>=<span class="pl-s"><span class="pl-pds">"</span>about<span class="pl-pds">"</span></span>&gt;about&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>news<span class="pl-pds">"</span></span> <span class="pl-e">data-page</span>=<span class="pl-s"><span class="pl-pds">"</span>news<span class="pl-pds">"</span></span>&gt;news&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>contact<span class="pl-pds">"</span></span> <span class="pl-e">data-page</span>=<span class="pl-s"><span class="pl-pds">"</span>contact<span class="pl-pds">"</span></span>&gt;contact&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h2>
+<a id="javascript代码" class="anchor" href="#javascript%E4%BB%A3%E7%A0%81" aria-hidden="true"><span class="octicon octicon-link"></span></a>javascript代码</h2>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>.nav<span class="pl-pds">'</span></span>).sujuiScroll({
+  navHeight<span class="pl-k">:</span><span class="pl-c1">50</span>,
+  speed<span class="pl-k">:</span><span class="pl-c1">1000</span>
+});</pre></div>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/anuny/sujuiScroll">Sujuiscroll</a> is maintained by <a href="https://github.com/anuny">anuny</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
